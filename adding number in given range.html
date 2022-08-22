@@ -1,0 +1,34 @@
+<table border=1>
+	<form name=f>
+		<tr>
+			<th>enter first number</th>
+			<th><input type=text name=t1></th>
+		</tr>
+		<tr>
+			<th>enter second number</th>
+			<th><input type=text name=t2></th>
+		</tr>
+		<tr>
+			<th>Result</th>
+			<th><input type=text name=t3></th>
+		</tr>
+		<tr>
+			<th colspan=2><input type=button value="Sum" onclick="a()"></th>
+		</tr>
+	</form>
+</table>
+
+<script>
+	function a()
+	{
+		n=parseInt(f.t1.value)
+		m=parseInt(f.t2.value)
+		s=0
+		while(n<=m)
+		{
+			s=s+n
+			n++
+		}
+		f.t3.value=s
+	}
+</script>
