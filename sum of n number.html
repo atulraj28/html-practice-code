@@ -1,0 +1,45 @@
+<table border=1>
+	<form name=f>
+		<tr>
+			<th>Range</th>
+			<th><input type=text name=t1></th>
+		</tr>
+		<tr>
+			<th><input type=button value="Sum" onclick="a()"></th>
+			<th><input type=button value="sum of even" onclick="b()"></th>
+		</tr>
+	</form>
+</table>
+
+<script>
+	function a()
+	{
+		s=0
+		n=parseInt(f.t1.value)
+		i=1
+		while(i<=n)
+		{
+			num=parseInt(window.prompt("Enter a number"))
+			s=s+num
+			i++
+		}
+		alert("sum="+s)
+	}
+	function b()
+	{
+		s=0
+		n=parseInt(f.t1.value)
+		i=1
+		while(i<=n)
+		{
+			num=parseInt(window.prompt("Enter a number"))
+			if(num%2==0)
+			{
+			s=s+num
+			}
+                    i++
+		}
+		alert("sum="+s)
+	}
+
+</script>
