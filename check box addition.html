@@ -1,0 +1,21 @@
+<body>
+	<form name=f>
+		<input type=checkbox name=c1 onclick="a()">500
+		<input type=checkbox name=c2 onclick="a()">600
+		<input type=checkbox name=c3 onclick="a()">100
+	</form>
+</body>
+
+<script>
+	function a()
+		{
+		s=0
+		if(f.c1.checked==true)
+			s=s+500
+		if(f.c2.checked==true)
+			s=s+600
+		if(f.c3.checked==true)
+			s=s+100
+	alert("you selected "+s)
+		}
+</script>
