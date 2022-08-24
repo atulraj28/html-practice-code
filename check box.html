@@ -1,0 +1,18 @@
+<body>
+	<form name=f>
+		<input type=checkbox name=c1 onclick="a()">apple
+		<input type=checkbox name=c2 onclick="a()">orange
+	</form>
+</body>
+
+<script>
+	function a()
+		{
+		s=""
+		if(f.c1.checked==true)
+			s="apple"
+		if(f.c2.checked==true)
+			s=s+" orange"
+	alert("you selected "+s)
+		}
+</script>
